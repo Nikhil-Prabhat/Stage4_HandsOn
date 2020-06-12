@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cognizant</groupId>
-	<artifactId>spring-learn</artifactId>
+	<artifactId>Springlearn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-learn</name>
+	<name>Spring04-Employee</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -38,9 +38,10 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>6.0.7.Final</version>
 		</dependency>
-
-
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

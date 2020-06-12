@@ -1,0 +1,52 @@
+package com.cognizant.model;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.NumberFormat;
+import org.springframework.lang.NonNull;
+
+public class Skill {
+
+	@NonNull
+	@NumberFormat
+	private int id;
+	
+	@NonNull
+	@NotBlank
+	@Size(min=1,max=30)
+	private String name;
+
+	public Skill() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Skill(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Skill [id=" + id + ", name=" + name + "]";
+	}
+
+}
